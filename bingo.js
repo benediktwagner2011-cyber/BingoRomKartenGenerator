@@ -24,7 +24,7 @@ function drawCardOnCanvas(canvas, nums){
   ctx.clearRect(0,0,400,400);
 
   const bg = new Image();
-  bg.src = 'Tor21.PNG';
+  bg.src = 'Tor21.png';
   bg.onload = () => {
     ctx.globalAlpha = 0.3; // Transparenz für das Hintergrundbild
     ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
@@ -125,3 +125,4 @@ document.getElementById("pdfBtn").addEventListener("click", () => {
 
   pdf.save("bingo_karten.pdf");
 });
+
